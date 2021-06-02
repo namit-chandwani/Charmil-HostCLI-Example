@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	subcmd "github.com/namit-chandwani/Charmil-HostCLI-Example/pkg/cmd"
 	"github.com/namit-chandwani/Charmil-SDK-POC/pkg/core"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
@@ -18,7 +19,7 @@ func main() {
 	}
 
 	hostCLI := core.GetCLI(hostKey)
-	err := hostCLI.AddCommands(cmd)
+	err := hostCLI.AddCommands(cmd, subcmd.FooCmd, subcmd.BarCmd)
 	if err != nil {
 		log.Fatal(err)
 	}

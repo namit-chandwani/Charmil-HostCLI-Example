@@ -1,0 +1,39 @@
+commands:
+  - 
+    name: manual
+    mapsTo:
+      name: man
+      args:
+        - command_name
+    shortDescription: "Shows the manual instruction of the specified command"
+    usage: '
+    $ host manual ping
+    '
+  # - 
+  #   name: current-dir
+  #   mapsTo:
+  #     name: pwd
+  #   shortDescription: "Get the current working directory"
+  #   usage: '
+  #   $ host current-dir
+  #   '
+  # - 
+  #   name: list-contents
+  #   mapsTo:
+  #     name: ls
+  #     args:
+  #       - directory
+  #   shortDescription: "Shows the files/directories in your specified directory"
+  #   usage: '
+  #   $ host list-contents .
+  #   '
+  # - 
+  #   name: create-file
+  #   mapsTo:
+  #     name: touch
+  #     args:
+  #       - filename
+  #   shortDescription: "Creates an empty file in the current directory"
+  #   usage: '
+  #   $ host create-file hello.txt
+  #   '

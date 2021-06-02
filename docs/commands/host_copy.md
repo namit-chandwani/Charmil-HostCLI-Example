@@ -9,7 +9,7 @@ host copy [flags]
 ### Examples
 
 ```
- $ git-helper copy https://github.com/namit-chandwani/Go-Calculator-CLI.git 
+ $ host copy https://github.com/namit-chandwani/Go-Calculator-CLI.git 
 ```
 
 ### Options
